@@ -1,13 +1,8 @@
 {
   "version": 2,
+  "buildCommand": "cd proofpals-frontend && npm ci && npm run build",
+  "outputDirectory": "proofpals-frontend/dist",
   "builds": [
-    {
-      "src": "proofpals-frontend/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist"
-      }
-    },
     {
       "src": "backend/main.py",
       "use": "@vercel/python"
